@@ -6,8 +6,8 @@ import joblib
 app = Flask(__name__)
 
 # Load model and encoders
-model = joblib.load('model/model.pkl')
-label_encoders = joblib.load('model/encoders.pkl')
+model = joblib.load('model.pkl')
+label_encoders = joblib.load('encoders.pkl')
 
 # Prediction route
 @app.route('/', methods=['GET', 'POST'])
