@@ -27,6 +27,6 @@ model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X_train, y_train)
 
 # Save model and encoders
-joblib.dump(model, 'model/model.pkl')
-joblib.dump(label_encoders, 'model/encoders.pkl')
+joblib.dump(model, 'model.pkl')
+joblib.dump(label_encoders, 'encoders.pkl')
 print("Model and encoders saved.")
